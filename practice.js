@@ -18,8 +18,10 @@ var arr = [10,20,30];
 */
 
 //Code Here
-
-
+function first(array){
+  return array[0]
+}
+first(arr)
 
 ////////// PROBLEM 2 //////////
 
@@ -33,14 +35,19 @@ var arr = [40,50,60];
 */
 
 //Code Here
+function last(arr){
+return arr[2]
 
-
+}
+last(arr)
 
 ////////// PROBLEM 3 //////////
 
 // Do not edit the code below.
 var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 // Do not edit the code above.
+
+
 
 /*
   Create a function named 'looper' that is given family as it's only argument. 
@@ -50,7 +57,12 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 //Code Here
 
 
+function looper(family){
+for(let i = 0; i < family.length; i++) {
+	alert(family[i]);
+}}
 
+looper(family)
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
@@ -63,6 +75,11 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
+function reversedLooper(letters){
+for(let i = letters.length-1; i >= 0; i--) {
+  alert(letters[i]);
+}}
+reversedLooper(letters)
 
 
 
@@ -78,11 +95,6 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 */
 
 //Code Here
-
-
-
-
-
 
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
