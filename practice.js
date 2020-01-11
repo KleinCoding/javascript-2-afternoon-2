@@ -96,20 +96,27 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
 //Code Here
 
-function evenFinder(arr){
-  var evenArr =[]
-  var oddArr = []
-  for(let i = 0; i < arr.length; i++) {
-    if(nums[i] % 2 == 0){
-    evenArr.push(arr[i])
-    }
-    else{oddArr.push(arr[i])}
-  }
-  return(evenArr)
+// function evenFinder(arr){
+//   var evenArr =[]
+//   var oddArr = []
+//   for(let i = 0; i < arr.length; i++) {
+//     if(nums[i] % 2 == 0){
+//     evenArr.push(arr[i])
+//     }
+//     else{oddArr.push(arr[i])}
+//   }
+//   return(evenArr)
   
-  }
-  evenFinder(nums)
+//   }
+//   evenFinder(nums)
   
+
+function evenFinder(nums){
+  filtered = nums.filter(function(number){
+  		return number % 2 === 0;
+  });	
+  return filtered
+  }
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
